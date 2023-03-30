@@ -54,8 +54,8 @@ if __name__ == '__main__':
 			cv2.rectangle(mask, (x1,y1), (x2,y2), (255,255,255), -1)
 		
 			# create arry for upper and lower hsv bounds 
-			lower_yellow_hsv = np.array([30,30,30])
-			upper_yellow_hsv = np.array([90,200,255])
+			lower_yellow_hsv = np.array([25,1,1])
+			upper_yellow_hsv = np.array([60,255,255])
 			
 			masked_image = img_processing(hsv, lower_yellow_hsv, upper_yellow_hsv)
 		
